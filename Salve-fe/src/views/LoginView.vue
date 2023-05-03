@@ -4,11 +4,6 @@
             <div class="p-12 bg-slate-700 rounded-lg">
                 <form class="space-y-6">
                     <div>
-                        <label class="text-slate-400 text-xl">Name</label><br>
-                        <input type="text" placeholder="Your full name" class="w-full mt-2 py-4 px-6 border border-gray-200 rounded-lg">
-                    </div>
-
-                    <div>
                         <label class="text-slate-400 text-xl">E-mail</label><br>
                         <input type="email" placeholder="Your e-mail address" class="w-full mt-2 py-4 px-6 border border-gray-200 rounded-lg">
                     </div>
@@ -19,15 +14,11 @@
                     </div>
 
                     <div>
-                        <label class="text-slate-400 text-xl">Repeat password</label><br>
-                        <input type="password" placeholder="Repeat your password" class="w-full mt-2 py-4 px-6 border border-gray-200 rounded-lg">
+                        <button class="py-4 px-6 bg-blue-500 text-slate-100 rounded-lg">Log in</button>
                     </div>
 
                     <div>
-                        <button class="py-4 px-6 bg-blue-500 text-slate-100 rounded-lg">Sign up</button>
-                    </div>
-                    <div>
-                        <p  class=" text-slate-400 text-xl">Already have an account? <RouterLink :to="{'name': 'login'}" class="underline">Click here</RouterLink> to log in!</p>
+                        <p  class=" text-slate-400 text-xl">Don't have an account? <RouterLink :to="{'name': 'signup'}" class="underline">Click here</RouterLink> to create one!</p>
                     </div>
                 </form>
             </div>
