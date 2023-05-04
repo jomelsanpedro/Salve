@@ -2,15 +2,64 @@
     <div class="max-w-7xl mx-auto grid grid-cols-2 gap-4">
         <div class="main-left">
             <div class="p-12 bg-slate-700 rounded-lg">
-                <form class="space-y-6">
-                    <div>
-                        <label class="text-slate-400 text-xl">E-mail</label><br>
-                        <input type="email" placeholder="Your e-mail address" class="w-full mt-2 py-4 px-6 border border-gray-200 rounded-lg">
+                <form class="space-y-8">
+                    <div class="relative ">
+                        <input 
+                            id="email" 
+                            name="email" 
+                            type="email" 
+                            placeholder="Email" 
+                            class="peer w-full mt-2 py-4 px-3 border border-gray-200 rounded-lg placeholder-transparent">
+                        <label for="email" 
+                        class="
+                        absolute
+                        left-3 
+                        -top-6
+                        text-slate-400
+                        transition-all
+                        peer-placeholder-shown:text-base 
+                        peer-placeholder-shown:text-slate-400    
+                        peer-placeholder-shown:top-6 
+                        peer-focus:-top-6 
+                        peer-focus:text-slate-400  
+                        peer-focus:text-xl
+                        select-none
+                        pointer-events-none
+                        ">Email</label>
                     </div>
-
-                    <div>
-                        <label class="text-slate-400 text-xl">Password</label><br>
-                        <input type="password" placeholder="Your password" class="w-full mt-2 py-4 px-6 border border-gray-200 rounded-lg">
+                    <!-- absolute
+                        left-3 
+                        -top-3.5 
+                        text-black 
+                        text-sm 
+                        transition-all 
+                        peer-placeholder-shown:text-base 
+                        peer-placeholder-shown:text-black    
+                        peer-placeholder-shown:top-0 
+                        peer-focus:-top-6 
+                        peer-focus:text-slate-400 
+                        peer-focus:text-xl -->
+                    <div class="relative">
+                        <input 
+                            id="password" 
+                            type="password" 
+                            placeholder="Your password" 
+                            class="peer w-full mt-2 py-4 px-3 border border-gray-200 rounded-lg placeholder-transparent">
+                        <label for="password" class="
+                        absolute
+                        left-3 
+                        -top-6
+                        text-slate-400
+                        transition-all
+                        peer-placeholder-shown:text-base 
+                        peer-placeholder-shown:text-slate-400    
+                        peer-placeholder-shown:top-6 
+                        peer-focus:-top-6 
+                        peer-focus:text-slate-400  
+                        peer-focus:text-xl
+                        select-none
+                        pointer-events-none
+                        ">Password</label>
                     </div>
 
                     <div>
@@ -23,12 +72,17 @@
                 </form>
             </div>
         </div>
-        <div class="pt-40 main-right">
-            <h1 class="py-1 px-12 font-mono font-bold text-slate-400 text-2xl tracking-tight">S A L V E</h1>
-            <div class="py-1 px-12 bg-slate-900 text-slate-400 text-xl"> 
-                Connect with other tech enthusiasts around the world on Salve.
-            </div>
-        </div>
+        <Intro />
     </div>
     
 </template>
+<script>
+import Intro from '../components/Intro.vue'
+
+export default {
+    name: 'FeedView',
+    components: {
+        Intro,
+    }
+}
+</script>
