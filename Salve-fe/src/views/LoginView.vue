@@ -3,7 +3,7 @@
         <div class="main-left">
             <div class="p-12 bg-slate-700 rounded-lg">
                 <form class="space-y-8">
-                    <div class="relative ">
+                    <div class="relative">
                         <input 
                             id="email" 
                             name="email" 
@@ -67,7 +67,14 @@
                     </div>
 
                     <div>
-                        <p  class=" text-slate-400 text-xl">Don't have an account? <RouterLink :to="{'name': 'signup'}" class="underline">Click here</RouterLink> to create one!</p>
+                        <p  class=" text-slate-400 text-xl">Don't have an account? 
+                            <RouterLink :to="{'name': 'signup'}" class="group text-blue-500 transition-all duration-300 ease-in-out">
+                                <span class="bg-left-bottom bg-gradient-to-r from-blue-500 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                                SIGN UP
+                                </span>
+                            </RouterLink>
+                            
+                        </p>
                     </div>
                 </form>
             </div>

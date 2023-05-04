@@ -95,7 +95,12 @@
                         <button class="py-4 px-6 bg-blue-500 text-slate-100 rounded-lg">Sign up</button>
                     </div>
                     <div>
-                        <p  class=" text-slate-400 text-xl">Already have an account? <RouterLink :to="{'name': 'login'}" class="underline">Click here</RouterLink> to log in!</p>
+                        <p  class=" text-slate-400 text-xl">Already have an account? 
+                            <RouterLink :to="{'name': 'login'}" class="group text-blue-500 transition-all duration-300 ease-in-out">
+                                <span class="bg-left-bottom bg-gradient-to-r from-blue-500 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">LOG IN</span>
+                            </RouterLink>
+                        </p>
+                        
                     </div>
                 </form>
             </div>
