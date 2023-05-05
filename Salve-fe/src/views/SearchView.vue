@@ -1,21 +1,21 @@
 <template>
-    <div class="max-w-7xl text-slate-300 mx-auto grid grid-cols-4 gap-4">
+    <div class="max-w-7xl text-slate-300 mx-auto grid grid-cols-1 sm:grid-cols-4 gap-4">
         <div class="main-left col-span-3 space-y-4">
             <div class="bg-slate-600 rounded-lg">
                 <div class="p-4 flex space-x-4">  
-                    <input type="search" class="p-4 w-full bg-blue-50 rounded-lg" placeholder="What are you looking for?">
+                    <input type="search" class="p-4 w-full bg-blue-50 rounded-lg text-sm sm:text-base" placeholder="What are you looking for?">
 
                     <a href="#" class="inline-block py-4 px-6 bg-blue-500 text-white rounded-lg">Search</a>
                 </div>
             </div>
 
-            <div class="p-4 bg-slate-600 rounded-lg grid grid-cols-4 gap-4">
+            <div class="p-3 bg-slate-600 rounded-lg grid grid-cols-3 sm:grid-cols-4 gap-4">
                 <div class="p-4 text-center bg-slate-800 rounded-lg">
                     <img src="https://avatars.githubusercontent.com/u/113662172?s=1000&v=4" class="mb-6 rounded-full">
                 
                     <p><strong>Jomel</strong></p>
 
-                    <div class="mt-6 flex space-x-8 justify-around">
+                    <div class="mt-6 flex space-x-4 sm:space-x-8 justify-around">
                         <p class="text-xs">182 friends</p>
                         <p class="text-xs">120 posts</p>
                     </div>
@@ -26,7 +26,7 @@
                 
                     <p><strong>Jomel</strong></p>
 
-                    <div class="mt-6 flex space-x-8 justify-around">
+                    <div class="mt-6 flex space-x-4 sm:space-x-8 justify-around">
                         <p class="text-xs">182 friends</p>
                         <p class="text-xs">120 posts</p>
                     </div>
@@ -37,7 +37,7 @@
                 
                     <p><strong>Jomel</strong></p>
 
-                    <div class="mt-6 flex space-x-8 justify-around">
+                    <div class="mt-6 flex space-x-4 sm:space-x-8 justify-around">
                         <p class="text-xs">182 friends</p>
                         <p class="text-xs">120 posts</p>
                     </div>
@@ -48,7 +48,7 @@
                 
                     <p><strong>Jomel</strong></p>
 
-                    <div class="mt-6 flex space-x-8 justify-around">
+                    <div class="mt-6 flex space-x-4 sm:space-x-8 justify-around">
                         <p class="text-xs">182 friends</p>
                         <p class="text-xs">120 posts</p>
                     </div>
@@ -59,7 +59,7 @@
                 
                     <p><strong>Jomel</strong></p>
 
-                    <div class="mt-6 flex space-x-8 justify-around">
+                    <div class="mt-6 flex space-x-4 sm:space-x-8 justify-around">
                         <p class="text-xs">182 friends</p>
                         <p class="text-xs">120 posts</p>
                     </div>
@@ -108,7 +108,7 @@
             </div>
         </div>
 
-        <div class="main-right col-span-1 space-y-4">
+        <div class="main-right col-span-3 sm:col-span-1 space-y-4">
             <PeopleYouMayKnow />
 
             <Trends />

@@ -1,6 +1,6 @@
 <template>
-    <div class="max-w-7xl mx-auto grid grid-cols-4 gap-4">
-        <div class="main-left col-span-1">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-4">
+        <div class="main-left col-span-2 sm:col-span-1">
             <div class="p-4 bg-slate-600 text-slate-300 text-center rounded-lg">
                 <img src="https://avatars.githubusercontent.com/u/113662172?v=4" class="mb-6 rounded-full">
                 
@@ -113,7 +113,7 @@
             </div>
         </div>
 
-        <div class="main-right col-span-1 space-y-4">
+        <div class="main-right col-span-2 sm:col-span-1 space-y-4">
             <PeopleYouMayKnow />
 
             <Trends />
