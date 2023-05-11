@@ -9,8 +9,7 @@
                             v-model="form.name" 
                             placeholder="Your full name" 
                             class="peer w-full mt-2 py-4 px-3 border border-gray-200 rounded-lg placeholder-transparent">
-                        <label class="
-                            absolute
+                        <label class="absolute
                             left-3 
                             -top-6
                             text-slate-400
@@ -94,7 +93,7 @@
                             pointer-events-none
                             ">Repeat password</label><br>
                     </div>
-                    <template v-if="errors.length > 0">
+                    <template v-if="errors.length">
                         <div class="bg-red-300 text-white rounded-lg p-6">
                             <p v-for="error in errors" v-bind:key="error">{{ error }}</p>
                         </div>
@@ -119,9 +118,10 @@
     
 </template>
 <script>
+import axios from 'axios'
 import Intro from '../components/Intro.vue'
 import { useToastStore } from '@/stores/toast'
-import axios from 'axios'
+
 
 export default {
     name: 'SignUpView',
