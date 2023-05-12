@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-3@z7+&6ma!l0*d)gjt^5ny0cr%+&#x6cber&y0it9l5b#$--0d
 DEBUG = True
 
 ALLOWED_HOSTS = []
+AUTH_USER_MODEL = 'account.User'
 
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(days=30),
@@ -42,14 +43,14 @@ REST_FRAMEWORK = {
     )
 }
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173/",
+    "http://localhost:5173",
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173/",
+    "http://localhost:5173",
 ]
 
-AUTH_USER_MODEL = 'account.User'
+
 
 # Application definition
 
